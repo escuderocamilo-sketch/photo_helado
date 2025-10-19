@@ -303,6 +303,26 @@ html {
     font-size: 0.9em;
   }
 }
+nav {
+  background-color: #730202; /* color vino */
+  text-align: center; /* centra todo el contenido dentro del nav */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex; /* hace que los botones estén centrados en línea */
+  gap: 30px; /* espacio entre los enlaces */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5cfc7;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 
 
