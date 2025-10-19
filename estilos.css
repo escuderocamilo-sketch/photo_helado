@@ -262,7 +262,7 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f48fb1;;
+  background-color: #730202;
   padding: 10px 0;
 }
 
@@ -331,6 +331,7 @@ button:hover {
     font-size: 0.9em;
   }
 }
+
 
 
 
