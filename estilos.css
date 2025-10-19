@@ -246,6 +246,93 @@ html {
   background-color: #730202;
   transform: scale(1.05);
 }
+/* ---- ESTILOS RESPONSIVOS ---- */
+.logo, .fotografia {
+  width: 100%;
+  max-width: 500px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f0a8d0;
+  padding: 10px 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 8px 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffe6f2;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.formulario-reserva {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 10px;
+}
+
+button {
+  background-color: #f48fb1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu a {
+    margin: 10px 0;
+  }
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+  .formulario-reserva {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.4em;
+  }
+  button {
+    font-size: 0.9em;
+  }
+}
+
+
 
 
 
