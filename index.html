@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHOTO HELADO</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-   
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHOTO HELADO</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
-    <nav class="menu">
-      <a href="#inicio">INICIO</a>
-      <a href="#galeria">GALERIA</a>
-      <a href="#reservas">RESERVAS</a>
-      <a href="#contacto">CONTACTO</a>
-    </nav>
-<section id="inicio">
+  <nav class="menu">
+    <a href="#inicio">INICIO</a>
+    <a href="#galeria">GALERIA</a>
+    <a href="#reservas">RESERVAS</a>
+    <a href="#contacto">CONTACTO</a>
+
+    <div class="carrito" id="carrito">
+      <h3>🛒 Tu carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <p class="total">Total: $<span id="total">0</span></p>
+      <button id="vaciar-carrito" class="boton">Vaciar carrito</button>
+      <button id="comprar">Comprar</button>
+    </div>
+  </nav>
+
+  <section id="inicio">
     <div class="fondo-transparente">
-        <img src="logo3.png" alt="logo de PHOTOHELADO" class="logo">
-        <h1 class="titulo">PhotoHelado</h1>
-        <h4 class="eslogan">Plasmando momentos deliciosos</h4>
-        <img src="material1.png" alt="fotografia" class="fotografia" >
-           </div>
-      </section>
-   <section id="galeria" class="fondo-transparente">   
-  <section id="menu" class="menu-seccion">
-  <h2>📷 Nuestro Menú Fotográfico</h2>
-  <p>Captura tu sabor favorito con PhotoHelado</p>
-
-  <div class="menu-items">
-
-    <div class="menu-item">
-      <h3>📸 Tropical Shot</h3>
-      <p>Helado de coco, mango y piña, con trozos de fruta fresca, jarabe de maracuyá y toque de menta.</p>
-      <p class="precio">💰 Precio: $12.000</p>
-      <p class="descripcion">Un disparo de color y frescura tropical.</p>
+      <img src="logo3.png" alt="logo de PHOTOHELADO" class="logo">
+      <h1 class="titulo">PhotoHelado</h1>
+      <h4 class="eslogan">Plasmando momentos deliciosos</h4>
+      <img src="material1.png" alt="fotografia" class="fotografia">
     </div>
+  </section>
 
-    <div class="menu-item">
-      <h3>🎞️ Choco Focus</h3>
-      <p>Tres bolas de helado de chocolate con brownie caliente, salsa de nutella y trozos de galleta oreo.</p>
-      <p class="precio">💰 Precio: $14.000</p>
-      <p class="descripcion">Enfoca el placer, captura el momento.</p>
-    </div>
+  <section id="galeria" class="fondo-transparente">   
+    <section id="menu" class="menu-seccion">
+      <h2>📷 Nuestro Menú Fotográfico</h2>
+      <p>Captura tu sabor favorito con PhotoHelado</p>
 
-    <div class="menu-item">
-      <h3>📷 Pink Exposure</h3>
-      <p>Helado artesanal de fresa, crema batida, coulis de frutos rojos y barquillo crujiente.</p>
-      <p class="precio">💰 Precio: $11.000</p>
-      <p class="descripcion">La exposición perfecta entre dulce y ácido.</p>
-    </div>
+      <div class="menu-items">
 
-    <div class="menu-item">
-      <h3>🎥 Banana Frame</h3>
-      <p>Banano fresco, helado de vainilla, chocolate y fresa, bañado en sirope y decorado con cerezas.</p>
-      <p class="precio">💰 Precio: $13.000</p>
-      <p class="descripcion">Un clásico que nunca sale de cuadro.</p>
-    </div>
+        <div class="menu-item">
+          <h3>📸 Tropical Shot</h3>
+          <p>Helado de coco, mango y piña, con trozos de fruta fresca, jarabe de maracuyá y toque de menta.</p>
+          <p class="precio" data-precio="12000">💰 Precio: $12.000</p>
+          <p class="descripcion">Un disparo de color y frescura tropical.</p>
+          <button class="agregar-carrito boton">Agregar al carrito</button>
+        </div>
 
-    <div class="menu-item">
-      <h3>📸 Coffee Capture</h3>
-      <p>Helado de café con caramelo salado, crema chantilly y granos de café cubiertos en chocolate.</p>
-      <p class="precio">💰 Precio: $12.500</p>
-      <p class="descripcion">Un retrato perfecto para los amantes del café.</p>
-    </div>
+        <div class="menu-item">
+          <h3>🎞️ Choco Focus</h3>
+          <p>Tres bolas de helado de chocolate con brownie caliente, salsa de nutella y trozos de galleta oreo.</p>
+          <p class="precio" data-precio="14000">💰 Precio: $14.000</p>
+          <p class="descripcion">Enfoca el placer, captura el momento.</p>
+          <button class="agregar-carrito boton">Agregar al carrito</button>
+        </div>
 
-  </div>
-</section>
-</section>  
+        <div class="menu-item">
+          <h3>📷 Pink Exposure</h3>
+          <p>Helado artesanal de fresa, crema batida, coulis de frutos rojos y barquillo crujiente.</p>
+          <p class="precio" data-precio="11000">💰 Precio: $11.000</p>
+          <p class="descripcion">La exposición perfecta entre dulce y ácido.</p>
+          <button class="agregar-carrito boton">Agregar al carrito</button>
+        </div>
 
-    <section id="ubicacion" class="ubicacion fondo-transparente">
-      <h2 class="titulo-animado">Nuestra ubicacion</h2>
-      <p>Visitanos y disfruta tu helado mientras capturamos tu mejor sonrisa.</p>
-      <div class="mapa">
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3967.2968123724036!2d-75.63438841931375!3d6.090659279756463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1760140404538!5m2!1ses-419!2sco"
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy">
-</iframe>
+        <div class="menu-item">
+          <h3>🎥 Banana Frame</h3>
+          <p>Banano fresco, helado de vainilla, chocolate y fresa, bañado en sirope y decorado con cerezas.</p>
+          <p class="precio" data-precio="13000">💰 Precio: $13.000</p>
+          <p class="descripcion">Un clásico que nunca sale de cuadro.</p>
+          <button class="agregar-carrito boton">Agregar al carrito</button>
+        </div>
+
+        <div class="menu-item">
+          <h3>📸 Coffee Capture</h3>
+          <p>Helado de café con caramelo salado, crema chantilly y granos de café cubiertos en chocolate.</p>
+          <p class="precio" data-precio="12500">💰 Precio: $12.500</p>
+          <p class="descripcion">Un retrato perfecto para los amantes del café.</p>
+          <button class="agregar-carrito boton">Agregar al carrito</button>
+        </div>
 
       </div>
     </section>
- <section id="reservas" class="reservas fondo-transparente">
-  <h2>📅 Reserva tu momento dulce</h2>
-  <p>Completa el formulario y guarda tu cita con nosotros.</p>
+  </section>  
 
-  <form class="formulario-reserva">
-    <label for="nombre">👤 Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+  <section id="ubicacion" class="ubicacion fondo-transparente">
+    <h2 class="titulo-animado">Nuestra ubicacion</h2>
+    <p>Visítanos y disfruta tu helado mientras capturamos tu mejor sonrisa.</p>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3967.2968123724036!2d-75.63438841931375!3d6.090659279756463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1760140404538!5m2!1ses-419!2sco" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
-    <label for="telefono">📞 Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+  <section id="reservas" class="reservas fondo-transparente">
+    <h2>📅 Reserva tu momento dulce</h2>
+    <p>Completa el formulario y guarda tu cita con nosotros.</p>
 
-    <label for="correo">📧 Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
+    <form class="formulario-reserva">
+      <label for="nombre">👤 Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-    <label for="fecha">📆 Fecha de reserva:</label>
-    <input type="date" id="fecha" name="fecha" required>
+      <label for="telefono">📞 Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
 
-    <label for="personas">👫 Número de personas:</label>
-    <input type="number" id="personas" name="personas" min="1" max="20" value="1" required>
+      <label for="correo">📧 Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
 
-    <label for="mensaje">📝 Mensaje adicional:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe algún detalle especial..."></textarea>
+      <label for="fecha">📆 Fecha de reserva:</label>
+      <input type="date" id="fecha" name="fecha" required>
 
-    <button type="submit">Reservar Ahora 🍨</button>
-  </form>
-</section>
+      <label for="personas">👫 Número de personas:</label>
+      <input type="number" id="personas" name="personas" min="1" max="20" value="1" required>
+
+      <label for="mensaje">📝 Mensaje adicional:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe algún detalle especial..."></textarea>
+
+      <button type="submit" class="boton">Reservar Ahora 🍨</button>
+    </form>
+  </section>
     
-    
-<footer class="pie-pagina">
-  <p>Síguenos en nuestras redes:</p>
-  <div class="redes">
-      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
-      <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-  </div>
-  <p>&copy; 2025 PhotoHelado - Todos los derechos reservados.</p>
-</footer>
+  <footer class="pie-pagina">
+    <p>Síguenos en nuestras redes:</p>
+    <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <p>&copy; 2025 PhotoHelado - Todos los derechos reservados.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
-

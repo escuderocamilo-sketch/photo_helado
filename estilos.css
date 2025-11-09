@@ -1,15 +1,15 @@
-/* 🌸 ESTILO GENERAL */
 body {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 180px;
-  background-image: url(fondo5.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    text-align:center;
+    font-family:Arial,sans-serif;
+    margin-top:180px;
+    background-image: url(fondo5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
 }
 
-/* 🔹 Fondo con transparencia */
 .fondo-transparente {
   background-color: rgba(217, 183, 154, 0.7);
   backdrop-filter: blur(8px);
@@ -18,68 +18,158 @@ body {
   width: 85%;
   max-width: 1000px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+ .menu {
+    background-color: #730202;
+    padding: 40px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+ }
+ .menu a {
+    text-decoration: none;
+    color:#D9B79A;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    font-family: 'poppins',sans-serif;
+ }
+ .menu a:hover {
+    color: #73462C;
+
+ }
+ .logo {
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 300px;
+ }
+ .fotografia {
+   display:grid;
+   margin: 0px auto 5px auto;
+   width: 700px;
+ }
+ .titulo {
+    margin: 0;
+    font-size: 120px;
+    font-family: 'pacifico',cursive;
+    color: #730202;
+ }
+ .eslogan{
+    margin-top: 5px;
+    font-size: 60px;
+    font-family: 'poppins',sans-serif;
+    color: #73462C;
+ }
+ .pie-pagina {
+    background-color: #730202;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    font-size: 18px;
+
 }
 
-/* 🔹 MENÚ SUPERIOR */
-.menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #730202;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
+.pie-pagina .redes a {
+    color: #D9B79A;
+    margin: 0 35px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #D9B79A;
-  font-weight: bold;
-  margin: 0 15px;
-  font-size: 22px;
-  font-family: 'Poppins', sans-serif;
-  transition: color 0.3s;
+.pie-pagina .redes a:hover {
+    color: #ffffff;
+}
+.ubicacion {
+    text-align: center;
+    margin-top: 60px;
+    color: #73462C;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.menu a:hover {
-  color: #73462C;
+.ubicacion h2 {
+    font-size: 45px;
+    font-family: 'pacifico',cursive;
+    color: #730202;
 }
 
-/* 🔹 LOGO Y CABECERA */
-.logo {
-  display: block;
-  margin: 0 auto 10px auto;
-  width: 100%;
-  max-width: 300px;
+.mapa iframe {
+  width: 100%;                
+  height: 400px;             
+  border: none;              
+  border-radius: 20px;       
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  
+}
+.menu-seccion {
+    background-color:#D9B79A;
+    width: 85%;
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.fotografia {
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 700px;
+.menu-seccion h2 {
+    color: #730202;
+    font-family: 'Pacifico', cursive;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-.titulo {
-  margin: 0;
-  font-size: 120px;
-  font-family: 'Pacifico', cursive;
-  color: #730202;
+.menu-seccion p {
+    color: #73462C;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
 }
 
-.eslogan {
-  margin-top: 5px;
-  font-size: 60px;
-  font-family: 'Poppins', sans-serif;
-  color: #73462C;
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
 
-/* 🔹 ANIMACIÓN TITULO */
+.menu-item {
+    background-color: rgba(217, 183, 154, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(115, 2, 2, 0.2);
+}
+
+.menu-item h3 {
+    color: #730202;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.menu-item .precio {
+    font-weight: bold;
+    color: #402218;
+    font-size: 18px;
+}
+
+.menu-item .descripcion {
+    font-style: italic;
+    color: #5e3e2b;
+}
+html {
+  scroll-behavior: smooth;
+}
 .titulo-animado {
   opacity: 0;
   transform: translateY(20px);
@@ -92,91 +182,7 @@ body {
     transform: translateY(0);
   }
 }
-
-/* 🔹 SECCIÓN MENÚ */
-.menu-seccion {
-  background-color: #D9B79A;
-  width: 85%;
-  margin: 60px auto;
-  padding: 50px;
-  border-radius: 25px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.menu-seccion h2 {
-  color: #730202;
-  font-family: 'Pacifico', cursive;
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.menu-seccion p {
-  color: #73462C;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 40px;
-}
-
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.menu-item {
-  background-color: rgba(217, 183, 154, 0.2);
-  border-radius: 20px;
-  padding: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(115, 2, 2, 0.2);
-}
-
-.menu-item h3 {
-  color: #730202;
-  font-family: 'Pacifico', cursive;
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.menu-item .precio {
-  font-weight: bold;
-  color: #402218;
-  font-size: 18px;
-}
-
-.menu-item .descripcion {
-  font-style: italic;
-  color: #5e3e2b;
-}
-
-/* 🔹 UBICACIÓN */
-.ubicacion {
-  text-align: center;
-  margin-top: 60px;
-  color: #73462C;
-  font-size: 25px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.ubicacion h2 {
-  font-size: 45px;
-  font-family: 'Pacifico', cursive;
-  color: #730202;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-/* 🔹 FORMULARIO DE RESERVAS */
+/* 🔹 Sección de reservas */
 .reservas {
   text-align: center;
   color: #730202;
@@ -187,6 +193,7 @@ body {
 
 .reservas h2 {
   font-family: 'Pacifico', cursive;
+  
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -196,6 +203,7 @@ body {
   font-size: 1.1em;
 }
 
+/* 🔹 Formulario */
 .formulario-reserva {
   display: flex;
   flex-direction: column;
@@ -209,7 +217,7 @@ body {
   align-self: flex-start;
   font-weight: bold;
   color: #222;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
 }
 
 .formulario-reserva input,
@@ -219,7 +227,7 @@ body {
   border-radius: 10px;
   border: none;
   font-size: 1em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .formulario-reserva button {
@@ -235,98 +243,76 @@ body {
 }
 
 .formulario-reserva button:hover {
-  background-color: #8B0404;
+  background-color: #730202;
   transform: scale(1.05);
 }
-
-/* 🔹 PIE DE PÁGINA */
-.pie-pagina {
+.agregar-carrito,
+.vaciar-carrito {
   background-color: #730202;
   color: #fff;
-  text-align: center;
-  padding: 30px 10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  margin-top: 60px;
-  font-size: 18px;
+  transition: background-color 0.3s;
 }
 
-.pie-pagina .redes a {
-  color: #D9B79A;
-  margin: 0 35px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.agregar-carrito:hover,
+.vaciar-carrito:hover {
+  background-color: #D9B79A;
+  color: #730202;
+}
+.carrito {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 200;
+  font-family: 'Poppins', sans-serif;
 }
 
-.pie-pagina .redes a:hover {
-  color: #ffffff;
+.carrito h3 {
+  margin-top: 0;
+  color: #730202;
 }
 
-/* 🔹 EFECTO SUAVE DE SCROLL */
-html {
-  scroll-behavior: smooth;
-}
-
-/* 🔹 RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-  }
-
-  .menu a {
-    margin: 10px 0;
-  }
-
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
-
-  .formulario-reserva {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 1.4em;
-  }
-
-  .titulo {
-    font-size: 60px;
-  }
-
-  .eslogan {
-    font-size: 30px;
-  }
-
-  button {
-    font-size: 0.9em;
-  }
-}
-nav {
-  background-color: #730202; /* color vino */
-  text-align: center; /* centra todo el contenido dentro del nav */
-  padding: 10px 0;
-}
-
-nav ul {
+.carrito ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: inline-flex; /* hace que los botones estén centrados en línea */
-  gap: 30px; /* espacio entre los enlaces */
+  margin: 10px 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #f5cfc7;
+.carrito li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.carrito .total {
   font-weight: bold;
-  font-size: 18px;
+  margin: 10px 0;
+  color: #73462C;
 }
 
+.carrito button {
+  background-color: #730202;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-
-
+.carrito button:hover {
+  background-color: #a0462d;
+}
 
 
 
